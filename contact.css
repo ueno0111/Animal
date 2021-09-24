@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+/* --------------------------------
+ * base
+ * -------------------------------- */
+* {
+  box-sizing: border-box;
+}
+
+body,
+a,
+.table {
+  color: #666;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.3rem;
+}
+
+p{
+  display:none;
+}
+
+input[type="checkbox"]:checked + p{
+  display:block;
+}
+
+.header-title{
+  margin-left: -30px;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.text-muted{
+  margin-left: -28px;
+  margin-top: 20px;
+  
+}
+
+
+.contact-time{
+  margin-top: -63px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 88px;
+  border-bottom: 3px solid seagreen;
+  width: 25%;
+  text-align: center;
+}
+
+.text-blue {
+  color: black !important;
+}
+
+.bg-blue,
+.thead-blue,
+.badge-primary {
+  background-color: seagreen !important;
+  margin-top: 45px;
+}
+
+
+
+.bg-pink {
+  background-color: seagreen !important;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+.border-blue {
+  border-color: #B2C2E1 !important;
+}
+
+.border-top {
+  border-width: 2px !important;
+}
+
+p {
+  line-height: 1.6rem;
+}
+
+/* --------------------------------------------------
+    ファーストビュー
+-------------------------------------------------- */
+.header {
+  height: 100vh;
+}
+
+.header .jumbotron {
+  background-image: url("../img/animal.hospital.jpg");
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  height: 90%;
+  margin-bottom: 0;
+  margin-bottom: 100px;
+}
+
+/* nav
+-------------------------------------------------- */
+nav.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+
+/*    キービジュアル
+-------------------------------------------------- */
+/*下層ページ*/
+.under-layer .jumbotron {
+  background-image: url("../img/clover.jpg");
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 0;
+}
+
+/* --------------------------------------------------
+    メイン
+-------------------------------------------------- */
+
+/*    トップページ
+-------------------------------------------------- */
+.tokucho h3 span {
+  font-family: 'Libre Caslon Text', serif;
+  margin-right: 1rem;
+  border-bottom: 5px solid #B2C2E1;
+}
+
+/*   スタッフ紹介
+-------------------------------------------------- */
+/* --------------------------------------------------
+    サンプルページ
+-------------------------------------------------- */
+
+/*   チャート
+-------------------------------------------------- */
+.flow > li .flow-icon {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 50px;
+  width: 50px;
+  color: #fff;
+  background-color: #6b90db;
+  margin: 0 auto 20px;
+  display: block;
+  text-align: center;
+  position: relative;
+  letter-spacing: 2px;
+}
+
+.flow > li .flow-icon::before {
+  content: "";
+  border: solid transparent;
+  border-width: 8px;
+  border-top-color: #6b90db;
+  position: absolute;
+  top: calc(100% - .2rem);
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* --------------------------------------------------
+    お問い合せページ
+-------------------------------------------------- */
+/*WEBでのご予約・お問合せ*/
+
+/* フェードイン用のCSS */
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.3s 0s ease-out;
+}
+
+/*予約する*/
+.btn-square {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: white;/*ボタン色*/
+  color: black;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  font-weight: bold;
+}
+.btn-square:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);/*下に動く*/
+  border-bottom: none;/*線を消す*/
+}
+
+.bg-blue2,
+.thead-blue,
+.badge-primary {
+  background-color: seagreen !important;
+  margin-top: 45px;
+  
+}
+
+
+
+.bg-pink2 {
+  background-color: seagreen !important;
+  margin-top: 45px;
+  margin-left: 30px;
+}
+
+
+.table{
+  text-align: center;
+  width:100%;
+
+}
+
+
+.col-md-6 {
+  -ms-flex: 0 0 50%;
+  flex: 1 1 50%;
+  max-width: 100%;
+
+}
+
+.col-md-6-2 {
+  -ms-flex: 0 0 50%;
+  flex: 1 1 50%;
+  max-width: 100%;
+margin-top: 50px;
+}
+.map{
+  background-color: cornflowerblue;
+  width: 27%;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 25px;
+}
+
+.footer-title{
+  font-weight: bold;
+  background-color: aliceblue;
+  width: 43%;
+  text-align: center;
+}
+
+
+table.calendar{
+  width: 100%;
+}
+
+table.calendar th, table.calendar td{
+  padding: 8px;
+  background-color: #FFF;
+  text-align: center;
+  border: 1px solid #CCC;
+}
+
+/* 行の最初のtdは日曜日なため赤く */
+table.calendar th:first-of-type, table.calendar td:first-of-type{
+  background-color: #ffefef;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+/* 行の最後のtdは土曜日なため青く */
+table.calendar th:last-of-type, table.calendar td:last-of-type{
+  background-color: #ededff;
+  color: #0000FF;
+  font-weight: bold;
+}
+
+/* 今日の日付 */
+table.calendar td.today{
+  background-color: #fbffa3;
+  font-weight: bold;
+}
