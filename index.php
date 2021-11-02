@@ -455,6 +455,19 @@ $(function(){
     </div>
   </div>
 
+  <!--天気-->
+  <div class="col-md-7">
+        <iframe src="https://api.openweathermap.org/data/2.5/weather?q=Tokyo,JP&appid=87586f50c2ea2c3f33cdf9fb879cffa5&lang=ja"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <script>
+  
+  
+  var forecast = JSON.parse(response.getContentText());//情報解析
+  console.log(forecast);
+
+
+</script>
+
   <footer id="footer">
     <div class="container-fulid">
       <div class="footer-title">
