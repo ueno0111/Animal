@@ -1,0 +1,993 @@
+/**************************** レスポンシブ　PC *****************************/
+@media  only screen and (min-width: 1025px){
+/* ナビ開いてる時のボタン */
+/*　ハンバーガーボタン　*/
+.hamburger {
+display: block;
+position: fixed;
+z-index: 3;
+right: 13px;
+top: 15px;
+width: 42px;
+height: 42px;
+cursor: pointer;
+text-align: center;
+padding: 5rem;
+margin-top: 4rem;
+}
+.hamburger span {
+display : block;
+position: absolute;
+width   : 30px;
+height  : 2px ;
+left    : 6px;
+background : #555;
+-webkit-transition: 0.3s ease-in-out;
+-moz-transition   : 0.3s ease-in-out;
+transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+top: 10px;
+}
+.hamburger span:nth-child(2) {
+top: 20px;
+}
+.hamburger span:nth-child(3) {
+top: 30px;
+}
+
+/* ナビ開いてる時のボタン */
+.hamburger.active span:nth-child(1) {
+top : 16px;
+left: 6px;
+-webkit-transform: rotate(-45deg);
+-moz-transform   : rotate(-45deg);
+transform        : rotate(-45deg);
+}
+
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+top: 16px;
+-webkit-transform: rotate(45deg);
+-moz-transform   : rotate(45deg);
+transform        : rotate(45deg);
+}
+
+.navbar-content{
+margin:0 auto;
+}
+
+nav.globalMenuSp {
+position: fixed;
+z-index : 2;
+top  : 0;
+left : 0;
+color: #000;
+background: #fff;
+text-align: center;
+transform: translateY(-100%);
+transition: all 0.6s;
+width: 100%;
+}
+
+nav.globalMenuSp ul {
+background: gainsboro;
+margin: 0 auto;
+padding: 0;
+width: 100%;
+}
+
+nav.globalMenuSp ul li {
+list-style-type: none;
+padding: 0;
+width: 100%;
+border-bottom: 1px solid black;
+}
+nav.globalMenuSp ul li:last-child {
+padding-bottom: 0;
+border-bottom: none;
+}
+nav.globalMenuSp ul li:hover{
+background :#ddd;
+}
+
+nav.globalMenuSp ul li a {
+display: block;
+color: #000;
+padding: 1em 0;
+text-decoration :none;
+}
+
+/*ヘッダーアイコン画像　*/
+.header-title-img{
+margin-left: 3rem;
+width: 20%;
+padding-top: 30px;
+}
+
+
+/*ヘッダータイトル*/
+.header-title-text{
+margin-top: -200px;
+font-size: 58px;
+font-family: monospace;
+border-bottom: 7px solid seagreen;
+text-align: center;
+padding-top: 126px;
+padding-bottom: 15px;
+padding-left: 5rem;
+}
+img{
+margin-top:0rem;
+}
+
+.text-center{
+margin-left: 10px;
+line-height: 40px;
+}
+
+.header .jumbotron h1 {
+font-size: 30px;
+margin-top: -108px;
+}
+/*トップテキスト*/
+.text-muted {
+font-size: 16px;
+line-height: 40px;
+}
+
+/*各セクションのタイトル*/
+.sub-title{
+margin-top:10rem;
+}
+
+/*診療案内スクロール*/
+/*診療案内　コンテンツ*/
+.step-3content{
+overflow: auto;
+scroll-snap-type: x;
+display: flex;
+margin-top: -20px;
+margin-left: 5px;
+}
+.area1{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area2{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area3{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area4{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area5{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area6{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area7{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area1:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 52px;
+margin-bottom: 170px;
+}
+.area2:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 68px;
+height: 100%;
+}
+.area3:nth-child(odd) {
+background-color: cornsilk;
+margin-top:43px;
+height: 100%;
+width:100%;
+padding-bottom: 2px;
+}
+.area4:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 101px;
+}
+.area5:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 77px;
+}
+.area6:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 101px;
+}
+.area7:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 96px;
+}
+
+/*診療案内　　サブタイトル*/
+.area-subtitle1{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 50%;
+margin: auto;
+border-radius: 10px;
+}
+.area-subtitle2{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-subtitle3{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 50%;
+border-radius: 10px;
+margin: auto;
+}
+.area-subtitle4{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-subtitle5{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 50%;
+border-radius: 10px;
+margin: auto;
+}
+.area-subtitle6{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-subtitle7{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 50%;
+border-radius: 10px;
+margin: auto;
+}
+
+/*診療案内　　画像*/
+.area-img1{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img2{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img3{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img4{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img5{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img6{
+max-width: 100%;
+height: 45rem;
+margin-bottom: 43px;
+padding-top: 0px;
+}
+.area-img7{
+max-width: 100%;
+height: 759px;
+margin-bottom: 49px;
+margin-top: -40px;
+}
+
+/*診療案内　　テキスト*/
+.area-text1{ 
+margin-top: 45px;
+line-height: 33px;
+}
+.area-text2{ 
+margin-top: 45px;
+line-height: 40px;
+}
+.area-text3{ 
+margin-top: 45px;
+line-height: 31px;
+
+}.area-text4{ 
+margin-top: 45px;
+line-height: 43px;
+}
+.area-text5{ 
+margin-top: 45px;
+line-height: 37px;
+}
+.area-text6{ 
+margin-top: 45px;
+line-height: 43px;
+}
+.area-text7{ 
+margin-top: 45px;
+line-height: 43px;
+}
+
+
+
+
+/*当院の理念*/
+.policy {
+background-color: cornsilk;
+margin-top: 12px;
+padding-bottom: 50px;
+margin-bottom: 0rem;
+width: 100%;
+}
+
+/*当院の理念　　画像*/
+.policy-image1{
+width: 100%;
+height: auto;
+margin-top: -90px;
+}
+.policy-image2{
+width: 100%;
+height: auto;
+margin-top: 70px;
+}
+.policy-image3{
+width: 100%;
+height: auto;
+margin-top: 90px;
+}
+
+/*当院の理念　　タイトル*/
+.policy-title{
+margin-top: -63px;
+font-weight: bold;
+text-align: left;
+margin-bottom: 30px;
+margin-left: 88px;
+border-bottom: 3px solid seagreen;
+width: 25%;
+text-align: center;
+}
+
+/*当院の理念　　サブタイトル*/
+.policy-contenttitle1{
+margin-left: 50px;
+margin-top: 50px;
+}
+.policy-contenttitle2{
+margin-left: 3rem;
+margin-top: 50px;
+}
+.policy-contenttitle3{
+margin-left: 50px;
+margin-top: 50px;
+}
+.policy-contenttitle1 span{
+font-size: 30px;
+color: white;
+margin-left: 20px;
+padding-left: 40px;
+font-style: italic;
+border-bottom: gray solid 2px;
+background-color: cadetblue;
+font-family: monospace;
+}
+.policy-contenttitle2 span{
+font-size: 30px;
+color: white;
+margin-left: 20px;
+padding-left: 40px;
+font-style: italic;
+border-bottom: gray solid 2px;
+background-color: cadetblue;
+font-family: monospace;
+}
+.policy-contenttitle3 span{
+font-size: 30px;
+color: white;
+margin-left: 20px;
+padding-left: 40px;
+font-style: italic;
+border-bottom: gray solid 2px;
+background-color: cadetblue;
+font-family: monospace;
+}
+
+/*当院の理念　　テキスト*/
+.policy-text1{
+margin-top: 30px;
+margin-left: 50px;
+font-size: 26px;
+line-height: 45px;
+padding: 50px;
+}
+.policy-text2{
+margin-top: 30px;
+margin-left: 3rem;
+font-size: 26px;
+line-height: 45px;
+padding: 50px;
+}
+.policy-text3{
+margin-top: 30px;
+font-size: 26px;
+line-height: 45px;
+padding: 50px;
+}
+
+
+
+/*医療設備  コンテンツ*/
+.step-4content{
+overflow: auto;
+scroll-snap-type: x;
+display: flex;
+margin-top: -20px;
+margin-left: 5px;
+}
+.area-machine1{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine2{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine3{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine4{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine5{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine6{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine7{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+.area-machine8{
+scroll-snap-align: start;
+height: 61vh;
+width: 100vw;
+flex: none;
+text-align: center;
+margin-top: 44px;
+height: 100%;
+padding-bottom: 155px;
+}
+
+.area-machine1:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 106px;
+margin-bottom: 170px;
+}
+.area-machine2:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 80px;
+
+}
+.area-machine3:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 104px;
+}
+.area-machine4:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 81px;
+}
+.area-machine5:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 81px;
+}
+.area-machine6:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 31px;
+
+}
+.area-machine7:nth-child(odd) {
+background-color: cornsilk;
+margin-top:44px;
+height: 100%;
+width:100%;
+padding-bottom: 106px;
+}
+.area-machine8:nth-child(even) {
+background-color:cornsilk;
+padding-bottom: 81px;
+
+}
+
+
+/*医療設備　　サブタイトル*/
+.area-machine-subtitle1{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle2{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle3{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle4{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle5{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle6{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle7{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+.area-machine-subtitle8{
+background-color: mediumseagreen;
+color: white;
+border-color: black;
+font-size: x-large;
+font-weight: bold;
+width: 40%;
+border-radius: 10px;
+margin: auto;
+}
+
+/*医療設備　　画像*/
+.area-machine-img1{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img2{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img3{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img4{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img5{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img6{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img7{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+.area-machine-img8{
+max-width: 100%;
+height: 40rem;
+margin-bottom: 43px;
+padding-top: 40px;
+}
+
+/*医療設備　　テキスト*/
+.area-machine-text1{ 
+margin-top: 45px;
+line-height: 40px;
+}
+.area-machine-text2{ 
+margin-top: 45px;
+line-height: 35px;
+}
+.area-machine-text3{ 
+margin-top: 45px;
+line-height: 40px;
+
+}.area-machine-text4{ 
+margin-top: 45px;
+line-height: 34px;
+}
+.area-machine-text5{ 
+margin-top: 45px;
+line-height: 34px;
+}
+.area-machine-text6{ 
+margin-top: 45px;
+line-height: 30px;
+}
+.area-machine-text7{ 
+margin-top: 45px;
+line-height: 37px;
+}
+.area-machine-text8{ 
+margin-top: 45px;
+line-height: 33px;
+}
+
+
+/*スタッフ紹介*/
+.wrapper{
+width:100%;
+}
+.wrapper .container{
+max-width:100%;
+margin:0px auto;
+padding:0px 0px;
+margin-top: -7rem;
+}
+/* content */
+.wrapper .content .heading{
+margin:0px 0px 40px 0px;
+font-size: 24px;
+font-weight: normal;
+text-align: center;
+
+}
+.wrapper .content .list {
+display: flex;
+justify-content: center;
+}
+.wrapper .content .list-item {
+margin:50px 0px;
+padding:0px 50px;
+text-align:center;
+margin-top: -20px;
+}
+
+.wrapper .content .list-item {
+margin:-30px;
+width:calc(100% / 3);
+}
+.wrapper .content .list-item .image{
+display: block;
+width: 100%;
+max-width: 300px;
+margin: 0px auto 20px auto;
+}
+.wrapper .content .list-item .text{
+line-height:1.8rem;
+font-size:0.8rem;
+color:#666666;
+}
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+max-width: 100%;
+}
+
+/*スタッフ紹介　名前*/
+.staff-class1{
+background-color: lightgoldenrodyellow;
+width: 100%;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.staff-class2{
+background-color: lightgoldenrodyellow;
+width: 100%;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.staff-class3{
+background-color: lightgoldenrodyellow;
+width: 100%;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+.staff-class4{
+background-color: lightgoldenrodyellow;
+width: 100%;
+font-weight: bold;
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+/*スタッフ紹介　　テキスト*/
+.staff-text {
+margin-top: 30px;
+font-family: serif;
+text-align: justify;
+margin-bottom: 0px;
+}
+
+/*お知らせ*/
+.info-title{
+margin-top: -63px;
+font-weight: bold;
+text-align: left;
+margin-bottom: 30px;
+margin-left: 70px;
+border-bottom: 3px solid seagreen;
+width: 50%;
+text-align: center;
+}
+
+/*お知らせ　　アイコン*/
+.info-img{
+margin-left: -15px;
+margin-top: 0px;
+}
+.text-blue {
+color: black;
+}
+.bg-blue,
+.thead-blue,
+.badge-primary {
+background-color: seagreen;
+}
+.bg-pink {
+background-color: seagreen;
+height: 100%;
+margin-top: 7rem;
+}
+p {
+line-height: 1.6rem;
+}
+
+/*その他*/
+.header {
+height: 30vh;
+}
+
+.header .jumbotron {
+background-image: url("../img/animal.hospital.jpg");
+background-size: cover;
+background-position: center top;
+position: relative;
+height:0;
+margin-bottom: 0;
+margin-bottom: 100px;
+margin-top: 3rem;
+}
+.list-group{
+  margin-bottom: 0rem;
+}
+
+
+/* フェードイン用のCSS */
+.slide-bottom {
+opacity: 0;
+transform: translateY(20px);
+transition: all 1.3s 0s ease-out;
+}
+.col-md-6{
+margin-left:1px;
+max-width: 100%;
+margin-top: 6rem;
+}
+.footer-title{
+border-top: seagreen solid 3px;
+width: 100%;
+}
+.footer-list{
+display: flex;
+color: #fff;
+font-weight: bold;
+margin-left: -65px;
+padding-top: 8px;
+}
+.table-sm td, .table-sm th {
+padding: 1rem;
+text-align: center;
+}
+}
