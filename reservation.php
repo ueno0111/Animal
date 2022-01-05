@@ -177,14 +177,10 @@
           <header class="under-layer">
             <div class="jumbotron jumbotron-fluid">
               <div class="container-fluid mb-3" style="background-color:rgba(255,255,255,0.5);">
-                <div class="container py-3">
-                  <div class="d-md-flex align-items-center">
-                    <div class="pt-3 col-md-4"></div>
-                    <div class="pt-3 col-md-9">
+                <div class="header-container">
                       <h1 class="header-title">ご予約はこちら</h1>
                       <p class="text-muted">お電話とWEBでのご予約も承っております。</p>
                     </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -200,8 +196,7 @@
               <section class="mb-5">
                 <h3 class="tel-reception" style="padding-top:0rem;"><span class="border-bottom pb-2" style="line-height: 3.5rem; font-family:monospace;"><i class="mr-3 fas fa-phone"></i>お電話でのご予約・お問合せ</span></h3>
 
-                <div class="d-md-flex justify-content-center align-items-center margin: 0 auto margin-top: 3rem margin-bottom: 6rem" style="background-color:lightgrey;">
-                  <p class="h3 p-3">03-5665-1212</p>
+                <div class="reservation-tel" style="background-color:lightgrey;">
                   <p class="p-3"><span class="reception">受付時間</span></p>
                   <p class="p-3">9:00～12:00 / 16:00～19:00<br>
                     ※休診日　火曜・日曜午後・祝日</p>
@@ -227,7 +222,7 @@
                       <!--ご用件を選択-->
                       <fieldset class="form-group">
                         <div class="row">
-                          <legend class="col-form-label col-sm-2 pt-0">ご用件</legend>
+                          <legend class="form-label">ご用件</legend>
                           <div class="col-sm-10">
                             <div class="form-check form-check-inline">
                               <input class="form-check-input" type="radio" name="requests" id="reservation" value="ご予約">
@@ -243,28 +238,28 @@
 
                       <!--個人情報入力欄-->
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">お名前<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
+                        <label for="inputEmail" class="form-label">お名前<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" id="name"  name="name" placeholder="お名前">
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">電話番号</label>
+                        <label for="inputPassword" class="form-label">電話番号</label>
                         <div class="col-sm-10">
                           <input type="tel" class="form-control" id="tel" name="tel" placeholder="電話番号">
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputPassword" class="col-sm-2 col-form-label">メール<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
+                        <label for="inputPassword" class="form-label">メール<span class="ml-2 badge badge-pill badge-primary">必須</span></label>
                         <div class="col-sm-10">
                           <input type="email" class="form-control" id="mail" name="mail" placeholder="メールアドレス">
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <div class="col-sm-2">連絡方法</div>
+                        <div class="form-label">連絡方法</div>
                         <div class="col-sm-10">
                           <div class="form-check form-check-inline">
                             <input class="form-check-input" type="checkbox" id="Check1" name="contact_type" value="メール">
@@ -279,14 +274,14 @@
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">診察券番号</label>
+                        <label for="inputEmail" class="form-label">診察券番号</label>
                         <div class="col-sm-10">
                           <input type="text" class="form-control" id="idnumber" name="idnumber" placeholder="再診の方はご記入ください">
                         </div>
                       </div>
 
                       <div class="form-group row">
-                        <label for="inputEmail" class="col-sm-2 col-form-label">予約希望日</label>
+                        <label for="inputEmail" class="form-label">予約希望日</label>
                         <div class="col-sm-10">
                           <div class="row">
                             <div class="calender-content">
@@ -397,14 +392,14 @@
 
                       <!--お問い合わせフォーム-->
                       <div class="form-group row">
-                        <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">お問い合わせ</label>
+                        <label for="exampleFormControlTextarea1" class="form-label">お問い合わせ</label>
                         <div class="col-sm-10">
                           <textarea class="form-control" id="contact_text" name="contact_text"></textarea>
                         </div>
                       </div>
                       <!--送信ボタン-->
                       <div class="form-group row">
-                        <div class="offset-sm-2 col-sm-10">
+                        <div class="button">
                           <button type="submit" class="btn btn-primary">送信</button>
                         </div>
                       </div>

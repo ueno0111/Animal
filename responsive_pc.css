@@ -97,25 +97,48 @@ color: #000;
 padding: 1em 0;
 text-decoration :none;
 }
+.contact{
+  margin-top: 10rem;
+}
 
+header{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  margin-top: 0rem;
+}
+main{
+  z-index: 1;
+  margin-top: 12rem;
+}
+.header {
+  height: 30vh;
+  }
+  .header-main-title{
+    width: 100%;
+    }
 /*ヘッダーアイコン画像　*/
 .header-title-img{
 margin-left: 3rem;
 width: 20%;
-padding-top: 30px;
+padding-top: 40px;
+}
+.icon{
+  margin-top: -11rem;
 }
 
 
 /*ヘッダータイトル*/
 .header-title-text{
 margin-top: -200px;
-font-size: 58px;
+font-size: 65px;
 font-family: monospace;
 border-bottom: 7px solid seagreen;
 text-align: center;
-padding-top: 126px;
+padding-top: 65px;
 padding-bottom: 15px;
-padding-left: 5rem;
+padding-left: 4rem;
+width: 100%;
 }
 img{
 margin-top:0rem;
@@ -127,18 +150,34 @@ line-height: 40px;
 }
 
 .header .jumbotron h1 {
-font-size: 30px;
-margin-top: -108px;
+font-size: 40px;
+margin-top: -95px;
 }
 /*トップテキスト*/
 .text-muted {
-font-size: 16px;
+font-size: 25px;
 line-height: 40px;
 }
+
 
 /*各セクションのタイトル*/
 .sub-title{
 margin-top:10rem;
+}
+
+/*診療案内のタイトル*/
+.medical-check-title{
+  font-weight: bold;
+  margin-bottom: 2rem;
+  margin-left: 88px;
+  border-bottom: 3px solid seagreen;
+  width: 50%;
+  text-align: center;
+  font-size: 40px;
+}
+
+.medical-check{
+  margin-top: 10rem;
 }
 
 /*診療案内スクロール*/
@@ -222,42 +261,45 @@ padding-bottom: 155px;
 }
 .area1:nth-child(odd) {
 background-color: cornsilk;
-margin-top:44px;
+margin-top:60px;
 height: 100%;
 width:100%;
-padding-bottom: 52px;
-margin-bottom: 170px;
+padding-bottom: 90px;
+margin-bottom: 0px;
 }
 .area2:nth-child(even) {
 background-color:cornsilk;
 padding-bottom: 68px;
 height: 100%;
+margin-top: 60px;
 }
 .area3:nth-child(odd) {
 background-color: cornsilk;
-margin-top:43px;
+margin-top:60px;
 height: 100%;
 width:100%;
-padding-bottom: 2px;
+padding-bottom: 61px;
 }
 .area4:nth-child(even) {
 background-color:cornsilk;
 padding-bottom: 101px;
+margin-top: 60px;
 }
 .area5:nth-child(odd) {
 background-color: cornsilk;
-margin-top:44px;
+margin-top:60px;
 height: 100%;
 width:100%;
-padding-bottom: 77px;
+padding-bottom: 110px;
 }
 .area6:nth-child(even) {
 background-color:cornsilk;
 padding-bottom: 101px;
+margin-top: 60px;
 }
 .area7:nth-child(odd) {
 background-color: cornsilk;
-margin-top:44px;
+margin-top:60px;
 height: 100%;
 width:100%;
 padding-bottom: 96px;
@@ -268,9 +310,9 @@ padding-bottom: 96px;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 margin: auto;
 border-radius: 10px;
 }
@@ -278,9 +320,9 @@ border-radius: 10px;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -288,9 +330,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -298,9 +340,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -308,9 +350,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -318,9 +360,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -328,9 +370,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -383,30 +425,37 @@ margin-top: -40px;
 .area-text1{ 
 margin-top: 45px;
 line-height: 33px;
+font-size: 20px;
 }
 .area-text2{ 
 margin-top: 45px;
 line-height: 40px;
+font-size: 20px;
 }
 .area-text3{ 
 margin-top: 45px;
 line-height: 31px;
+font-size: 20px;
 
 }.area-text4{ 
 margin-top: 45px;
 line-height: 43px;
+font-size: 20px;
 }
 .area-text5{ 
 margin-top: 45px;
 line-height: 37px;
+font-size: 20px;
 }
 .area-text6{ 
 margin-top: 45px;
 line-height: 43px;
+font-size: 20px;
 }
 .area-text7{ 
 margin-top: 45px;
 line-height: 43px;
+font-size: 20px;
 }
 
 
@@ -419,13 +468,13 @@ margin-top: 12px;
 padding-bottom: 50px;
 margin-bottom: 0rem;
 width: 100%;
+margin-top: 0rem;
 }
 
 /*当院の理念　　画像*/
 .policy-image1{
 width: 100%;
 height: auto;
-margin-top: -90px;
 }
 .policy-image2{
 width: 100%;
@@ -440,57 +489,48 @@ margin-top: 90px;
 
 /*当院の理念　　タイトル*/
 .policy-title{
-margin-top: -63px;
+margin-top: -70px;
 font-weight: bold;
-text-align: left;
 margin-bottom: 30px;
 margin-left: 88px;
 border-bottom: 3px solid seagreen;
-width: 25%;
+width: 50%;
 text-align: center;
+font-size: 40px;
 }
 
 /*当院の理念　　サブタイトル*/
 .policy-contenttitle1{
-margin-left: 50px;
-margin-top: 50px;
+width: 100%;
 }
 .policy-contenttitle2{
-margin-left: 3rem;
-margin-top: 50px;
+width: 100%;
 }
 .policy-contenttitle3{
-margin-left: 50px;
-margin-top: 50px;
+width: 100%;
 }
 .policy-contenttitle1 span{
-font-size: 30px;
+font-size: 45px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 .policy-contenttitle2 span{
-font-size: 30px;
+font-size: 45px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 .policy-contenttitle3 span{
-font-size: 30px;
+font-size: 45px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 
@@ -501,6 +541,7 @@ margin-left: 50px;
 font-size: 26px;
 line-height: 45px;
 padding: 50px;
+text-align: center;
 }
 .policy-text2{
 margin-top: 30px;
@@ -508,12 +549,14 @@ margin-left: 3rem;
 font-size: 26px;
 line-height: 45px;
 padding: 50px;
+text-align: center;
 }
 .policy-text3{
 margin-top: 30px;
 font-size: 26px;
 line-height: 45px;
 padding: 50px;
+text-align: center;
 }
 
 
@@ -640,7 +683,7 @@ padding-bottom: 81px;
 }
 .area-machine6:nth-child(even) {
 background-color:cornsilk;
-padding-bottom: 31px;
+padding-bottom: 107px;
 
 }
 .area-machine7:nth-child(odd) {
@@ -648,11 +691,11 @@ background-color: cornsilk;
 margin-top:44px;
 height: 100%;
 width:100%;
-padding-bottom: 106px;
+padding-bottom: 108px;
 }
 .area-machine8:nth-child(even) {
 background-color:cornsilk;
-padding-bottom: 81px;
+padding-bottom: 82px;
 
 }
 
@@ -662,9 +705,9 @@ padding-bottom: 81px;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -672,9 +715,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -682,9 +725,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -692,9 +735,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -702,9 +745,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -712,9 +755,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -722,9 +765,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -732,9 +775,9 @@ margin: auto;
 background-color: mediumseagreen;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 35px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -742,85 +785,85 @@ margin: auto;
 /*医療設備　　画像*/
 .area-machine-img1{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img2{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
 padding-top: 40px;
 }
 .area-machine-img3{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img4{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img5{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img6{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img7{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 .area-machine-img8{
 max-width: 100%;
-height: 40rem;
+height: 50rem;
 margin-bottom: 43px;
-padding-top: 40px;
+padding-top: 0px;
 }
 
 /*医療設備　　テキスト*/
 .area-machine-text1{ 
-margin-top: 45px;
-line-height: 40px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text2{ 
-margin-top: 45px;
-line-height: 35px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text3{ 
-margin-top: 45px;
-line-height: 40px;
+  text-align: center;
+  font-size: 25px;
 
 }.area-machine-text4{ 
-margin-top: 45px;
-line-height: 34px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text5{ 
-margin-top: 45px;
-line-height: 34px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text6{ 
-margin-top: 45px;
-line-height: 30px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text7{ 
-margin-top: 45px;
-line-height: 37px;
+  text-align: center;
+  font-size: 25px;
 }
 .area-machine-text8{ 
-margin-top: 45px;
-line-height: 33px;
+  text-align: center;
+  font-size: 25px;
 }
 
 
@@ -832,7 +875,7 @@ width:100%;
 max-width:100%;
 margin:0px auto;
 padding:0px 0px;
-margin-top: -7rem;
+margin-top:3rem;
 }
 /* content */
 .wrapper .content .heading{
@@ -920,6 +963,7 @@ margin-left: 70px;
 border-bottom: 3px solid seagreen;
 width: 50%;
 text-align: center;
+font-size: 40px;
 }
 
 /*お知らせ　　アイコン*/
@@ -938,17 +982,13 @@ background-color: seagreen;
 .bg-pink {
 background-color: seagreen;
 height: 100%;
-margin-top: 7rem;
+margin-top: 1rem;
 }
 p {
 line-height: 1.6rem;
 }
 
 /*その他*/
-.header {
-height: 30vh;
-}
-
 .header .jumbotron {
 background-image: url("../img/animal.hospital.jpg");
 background-size: cover;
@@ -962,6 +1002,14 @@ margin-top: 3rem;
 .list-group{
   margin-bottom: 0rem;
 }
+/*アクセス*/
+.access-content{
+margin-left: 2rem;
+}
+.access{
+  font-size: 27px;
+  font-family: monospace;
+}
 
 
 /* フェードイン用のCSS */
@@ -971,9 +1019,8 @@ transform: translateY(20px);
 transition: all 1.3s 0s ease-out;
 }
 .col-md-6{
-margin-left:1px;
 max-width: 100%;
-margin-top: 6rem;
+margin-top: 1rem;
 }
 .footer-title{
 border-top: seagreen solid 3px;

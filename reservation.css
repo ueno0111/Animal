@@ -28,6 +28,9 @@ color:#111;
 body{
 background-color: floralwhite;
 }
+.button{
+  margin-left: 1rem;
+}
 
 
 /**レスポンシブ スマホ**/
@@ -44,8 +47,12 @@ font-size: 28px;
 .tel-reception{
 padding-top: 0rem;
 font-size: 15px;
-margin-top: -8rem;
+margin-top: -3rem;
 margin-bottom: 1rem;
+background-color: seagreen;
+color: white;
+text-align: center;
+border-radius: 45px;
 }
 .web-reception {
 background-color: seagreen;
@@ -53,6 +60,14 @@ color: white;
 text-align: center;
 border-radius: 45px;
 font-size: 15px;
+}
+.reservation-tel{
+  margin-top: 3rem;
+}
+.header-container{
+  background-color: darkseagreen;
+  text-align: center;
+  padding-top: 1rem;
 }
 .text-center {
 text-align: center;
@@ -88,8 +103,15 @@ margin-right: auto;
 margin-left: auto;
 }
 .text-muted{
-font-size:11px;
-margin-bottom: 10px;
+font-size:13px;
+margin-bottom: -1rem;
+}
+.form-label{
+  font-size: 15px;
+  background-color: lightgray;
+  width: 30%;
+  text-align: center;
+  margin: 1rem;
 }
 
 /*下層ページ*/
@@ -98,6 +120,8 @@ background-image: url("../animal/hare.jpg");
 background-size: cover;
 background-position: center top;
 margin-bottom: 0;
+background-color: seagreen;
+margin-top: 1rem;
 }
 .col-md-6{
 max-width: 100%;
@@ -196,6 +220,15 @@ background-image: url(../animal/hare.jpg);
 background-size: cover;
 background-position: center top;
 margin-bottom: 0px;
+margin-top: 1rem;
+background-color: seagreen;
+}
+.header-container{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-top: -1rem;
+  margin-bottom: -2rem;
+  text-align: center;
 }
 .header-title{
 text-align: center;
@@ -270,6 +303,7 @@ padding-top: 8px;
 background-color: seagreen;
 padding: 35px;
 margin-top: 44px;
+
 }
 .web-reservation{
 background-color: seagreen;
@@ -281,12 +315,26 @@ background-color: seagreen;
 color:white;
 text-align: center;
 border-radius: 45px;
+margin-bottom: 4rem;
+}
+.reservation-tel{
+  margin-bottom: 5rem;
 }
 .web-reception{
 background-color:seagreen;
 color:white;
 text-align: center;
 border-radius: 45px;
+margin-top: -2rem;
+margin-bottom: 3rem;
+}
+.form-label{
+  font-size: 25px;
+  background-color: lightgray;
+  width: 30%;
+  text-align: center;
+  margin: 1rem;
+  font-family: monospace;
 }
 .un-footer{
 background-color: seagreen;
@@ -387,7 +435,10 @@ opacity: 0;
 transform: translateY(20px);
 transition: all 1.3s 0s ease-out;
 }
-
+.reservation-tel{
+  margin-top: 4rem;
+  margin-bottom: 7rem;
+}
 
 .col-md-6{
 margin-left:1px;
@@ -416,8 +467,7 @@ background-position: center top;
 margin-bottom: 0px;
 }
 .col-md-9 {
-max-width: 75%;
-margin-left: -50px;
+max-width: 100%;
 }
 .pt-5, .py-5 {
 padding-top: 0rem!important;

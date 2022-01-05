@@ -31,12 +31,16 @@
 
     <body>
           <!--ヘッダータイトル-->
+  
           <header>
-              <div class="header-main-title">
-                <a href="/"><img src="img/hospital.png" alt="logo" class="header-title-img"></a>
+   
+                <div class="header-main-title">
+               
                 <h1 class="header-title-text">まるやま動物病院</h1>
               </div>
-
+              <div class="icon">
+                    <img src="img/hospital.png" alt="logo" class="header-title-img">
+                  </div>
               <!--ナビゲーション-->
               <div class="hamburger">
                 <span></span>
@@ -71,17 +75,17 @@
 
           </header>
 
+
           <main>
               <!--メインヘッダー-->
               <section class="header">
                 <div class="jumbotron jumbotron-fluid">
-
                     <div class="container-fluid mt-5" style="background-color:rgba(255,255,255,0.8);">
                       <div class="container py-3">
                         <div class="d-md-flex align-items-center">
                           <div class="header-title">
                               <div class="slide-bottom show">
-                                <h1>-動物たちは<br>私たちの家族です-</h1>
+                                <h1>-動物は私たちの家族です-</h1>
                                 <!--フェードイン-->
                                 <script>
                                     $(function(){
@@ -110,71 +114,70 @@
                         </div>
                       </div>
                     </div>
+                </div>
+              </section>
 
-                  <!--電話予約-->
+              <!--電話予約-->
+              <section class="contact">
                   <div class="container main-img">
-                    <div class="d-md-flex flex-row justify-content-between">
-                      <div class="bg-blue p-3 rounded-lg col-md-6 mr-md-3 mb-3 mb-md-0">
-                        <p class="text-white h2"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
-                        <div class="d-flex align-items-center mb-2">
-                          <p class="bg-white rounded-pill px-3 py-2 mr-3 mb-0 text-center col-3 text-blue font-weight-bold">受付時間</p>
-                          <p class="text-white h4">9:00～12:00 / 16:00～19:00</p>
-                        </div>
-                        <p class="text-white">※ 火曜、日曜午後・祝祭日<br>※手術・往診12時〜16時</p>
+                  <div class="d-md-flex flex-row justify-content-between">
+                    <div class="bg-blue p-3 rounded-lg col-md-6 mr-md-3 mb-3 mb-md-0">
+                      <p class="text-white h2"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
+                      <div class="d-flex align-items-center mb-2">
+                        <p class="bg-white rounded-pill px-3 py-2 mr-3 mb-0 text-center col-3 text-blue font-weight-bold">受付時間</p>
+                        <p class="text-white h4">9:00～12:00 / 16:00～19:00</p>
                       </div>
-                      
-                      <!--WEB予約-->
-                      <div class="bg-pink p-4 rounded-lg col-md-5">
-                        <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
-                        <p class="text-white">休診日および診療時間外に関係なく24時間受付</p>
-                        <a class="btn bg-white" href="reservation.php" role="button">予約する</a>
-                      </div>
+                      <p class="text-white">※ 火曜、日曜午後・祝祭日<br>※手術・往診12時〜16時</p>
+                    </div>
+                    
+                    <!--WEB予約-->
+                    <div class="bg-pink p-4 rounded-lg col-md-5">
+                      <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
+                      <p class="text-white">休診日および診療時間外に関係なく24時間受付</p>
+                      <a class="btn bg-white" href="reservation.php" role="button">予約する</a>
                     </div>
                   </div>
-
                 </div>
               </section>
 
 
               <!--診療案内-->
-              <div class="sub-title">
-                <img src="img/dogcat2.png" alt="アイコン">
-                <h2 class="medical-check-title">診療案内</h2>
-              </div>
-
               <section class="medical-check">
+              <div class="sub-title">
+                    <img src="img/dogcat2.png" alt="アイコン">
+                    <h2 class="medical-check-title">診療案内</h2>
+                  </div>
                 <div class="container">
-
                   <!--診療案内スライドショー-->
                   <div class="step-3content">
                     <div class="area1">
                       <img src="img/matiaisitu.png" alt="ご来院" class="area-img1">
                       <h3 class="area-subtitle1">ご来院</h3>
-                      <p class="area-text1">人間と同じく動物も早期発見が大事です。<br>日常で些細な変化を感じましたら、<br>ためらわずにお気軽にご来院下さい。<br>無料カウンセリングもお受けしております。</p>
+                      <p class="area-text1">人間と同じく動物も早期発見が大事です<br>日常で些細な変化を感じましたら、<br>ためらわずにお気軽にご来院下さい</p>
                     </div>
 
                     <div class="area2">
                       <img src="img/uketuke.png" alt="受付" class="area-img2">
                       <h3 class="area-subtitle2">受付</h3>
-                      <p class="area-text2">スタッフは全員動物大好きです。<br>動物を安心させる接し方に長けております。<br>気軽に相談しにお立ち寄り下さい</h6>
+                      <p class="area-text2">スタッフは全員動物大好きです<br>動物を安心させる接し方が得意なので<br>気軽にお立ち寄り下さい</h6>
                     </div>
                     
                     <div class="area3">
                       <img src="img/sinsatu.png" alt="診察" class="area-img3">
                       <h3 class="area-subtitle3">診察</h3>
-                      <p class="area-text3">1.どんな症状か？<br>2.いつから始まったのか<br>3.食欲はあるか<br>4.おトイレの状況<br>5.嘔吐や下痢はあるか<br>6.普段のフードはどんなものか
+                      <p class="area-text3">1.どんな症状か、いつからか。<br>2.食欲はあるか、嘔吐、下痢の状況<br>3.生活環境<br>などを診察してゆきます
                     </div>
 
                     <div class="area4">
                       <img src="img/kensa.png" alt="検査" class="area-img4">
                       <h3 class="area-subtitle4">検査</h3>
-                      <p class="area-text4">獣医師による検温、触診、視診、聴診<br>動物たちの状態を細かくチェックします。</p>
+                      <p class="area-text4">獣医師による検温、触診、視診、聴診<br>動物たちの状態を細かくチェックします</p>
                     </div>
 
                     <div class="area5">
                       <img src="img/syujutu2.png" alt="入院＆手術" class="area-img5">
                       <h3 class="area-subtitle5">入院＆手術</h3>
-                      <p class="area-text5">動物達を一番に考えます<br>手術時間を計測し手術術時間の短縮に努め、<br>動物達の体にかかる負担を減らします</p>
+                      <p class="area-text5">手術時間を計測し手術術時間の短縮に努め<br>動物達の体にかかる負担を減らします</p>
                     </div>
 
                     <div class="area6">
@@ -186,7 +189,7 @@
                     <div class="area7">
                       <img src="img/dog.png" alt="退院" class="area-img7">
                       <h3 class="area-subtitle7">退院</h3>
-                      <p class="area-text7">退院時に血液検査、術後のご説明を致します。<br>食事、術後のケアなどのアドバイスも行います</p>
+                      <p class="area-text7">退院時に血液検査、術後のご説明を致します<br>食事、術後のケアなどのアドバイスも行います</p>
                     </div>
                   </div>
 
@@ -198,14 +201,12 @@
 
               <!--当院の理念ー-->
               <div class="sub-title">
-                <img src="img/dogcat2.png" alt="アイコン">
-                <h2 class="policy-title">当院の理念</h2>
-              </div>
-
+                    <img src="img/dogcat2.png" alt="アイコン">
+                    <h2 class="policy-title">当院の理念</h2>
+                </div>
               <section class="policy">
-                <div class="container1">
-                  <div class="policy-container">
-
+                <div class="policy-container">
+                  <div class="container1">
                       <!--フェードイン--->
                       <script>
                             $(function(){
@@ -228,8 +229,8 @@
                         <img src="img/animal-love.png" alt="" class="policy-image1">
                       </div>
                       <div class="policy-content">
-                        <h3 class="policy-contenttitle1">1.<span>動物への愛<span></h3>
-                        <p class="policy-text1">「お節介なくらい愛情たっぷり、みんなうちの子！」これが当院のポリシーです。<br>縁があって出会った子犬や子猫は家族。たっぷり愛情をを注ぎ育て、ずっと元気にいてほしい。<br>いつか来るお別れのときでも...動物と飼い主さんを一番に考え、最善の治療を行います。</p>
+                        <h3 class="policy-contenttitle1"><span>動物への愛<span></h3>
+                        <p class="policy-text1">「お節介なくらい愛情たっぷり、みんなうちの子！」<br>出会った子犬や子猫は家族、ずっと元気にいてほしい<br>動物と飼い主さんを一番に考え、最善の治療を尽くします</p>
                       </div>
 
                       <!--信頼と安心-->
@@ -238,8 +239,8 @@
                           <img src="img/sinrai.png" alt="" class="policy-image2">
                         </div>
                         <div class="policy-content1">
-                          <h3 class="policy-contenttitle2">2.<span>信頼と安心<span></h3>
-                          <p class="policy-text2">弊院は地域密着型の「町の病院」です。飼い主さんと深いコミニュケーションを図り<br>我が子の体調変化にすぐに気づくことができます。診察でなくても、お気軽にお立ち寄り下さい。<br>病気の治療は早期発見が基本です。早い段階で適切な治療に入ることが大切です。</p>
+                          <h3 class="policy-contenttitle2"><span>信頼と安心<span></h3>
+                          <p class="policy-text2">飼い主さんと深いコミニュケーションを図り<br>我が子の体調変化にすぐに気づくことができます。<br>病気は早期発見が基本です。早い段階で治療に入ることが大切です。</p>
                         </div>
                       </div>
 
@@ -249,11 +250,10 @@
                           <img src="img/skill.png" alt="" class="policy-image3">
                         </div>
                         <div class="policy-content2">
-                          <h3 class="policy-contenttitle3">3.<span>知識と技術と精神<span></h3>
-                          <p class="policy-text3">弊院ではその思いと同じくらい「知識、技術」を高め、研鑽に努めております。<br>人手不足でも応援にかけつけてくれる獣医師、看護師もおり体制は万全です。<br>経験豊富な獣医師とスタッフが責任を持ってご対応致します。</p>
+                          <h3 class="policy-contenttitle3"><span>知識と技術と精神<span></h3>
+                          <p class="policy-text3">弊院は「知識、技術」の向上に努めております<br>応援にかけつけてくれるスタッフもおり体制は万全です。<br>経験豊富な医師とスタッフが責任を持ってご対応します。</p>
                         </div>
-                    </div>
-
+                      </div>
                   </div>
                 </div>
               </section>
@@ -303,7 +303,7 @@
                       <div class="area-machine6">
                         <img src="img/syujutu-item1.png" alt="レントゲン" class="area-machine-img6">
                         <h3 class="area-machine-subtitle6">レントゲン</h3>
-                        <p class="area-machine-text6"><br>最新のレントゲン機器を導入<br>動物たちへの負担を軽減し<br>診断精度を高め、より的確に<br>動物達の治療に役立ています。</p>
+                        <p class="area-machine-text6"><br>最新のレントゲン機器を導入<br>動物たちへの負担を軽減し診断精度を高め<br>動物達の治療に役立ています。</p>
                       </div>
 
                       <div class="area-machine7">
@@ -315,7 +315,7 @@
                       <div class="area-machine8">
                         <img src="img/syujutu-item4.png" alt="超音波スケーラー" class="area-machine-img8">
                         <h3 class="area-machine-subtitle8">超音波スケーラー</h3>
-                        <p class="area-machine-text8">超音波で歯石を粉砕し除去する機器です。<br>超音波スケーラーはスピーディに歯石除去<br>口腔内を傷つけず施術を行います。</p>
+                        <p class="area-machine-text8">超音波で歯石を粉砕し除去する機器です。<br>スピーディに歯石除去<br>口腔内を傷つけず施術を行います。</p>
                       </div>
 
                   </div>
@@ -340,25 +340,25 @@
                             <div class="list-item">
                               <img src="img/staff1.png" class="image">
                               <h2 class="staff-class1">院長</h2>
-                              <div class="staff-text">動物は単なるペットや、ましてや物ではなく「家族」です。来院した眼の前の子を自分の家族と同じように考え「どのように治療するか？」を親身に考えて診療を行います。</div>
+                              <div class="staff-text">一言だけです！「来院した子達は家族」です</div>
                             </div>
                                 
                             <div class="list-item">
                               <img src="img/staff6.png" class="image">
                               <h2 class="staff-class2">副院長</h2>
-                              <div class="staff-text">病気や怪我を診るだけではなく健康診断をはじめ、食物や問題行動・しつけに関しても、皆様のお悩みお答えしてゆきたいと思います！</div>
+                              <div class="staff-text">病気や怪我を診るだけではなく、食事、しつけに関するお悩みお答えしてゆきます</div>
                             </div>
 
                             <div class="list-item">
                               <img src="img/staff3.png" class="image">
                               <h2 class="staff-class3">主任</h2>
-                              <div class="staff-text">私達が知識や技術を向上するのはもちろんですが、飼い主さんもともに我が子のためにケアができるようにアドバイスもしております！一緒に可愛い子どもたちの為に頑張りましょう！</div>
+                              <div class="staff-text">飼い主さんと一緒にケアができるようにアドバイスもしております！</div>
                             </div>
 
                             <div class="list-item">
                               <img src="img/staff4.png" class="image">
                               <h2 class="staff-class4">看護師長</h2>
-                              <div class="staff-text">診察は病気のサインを見つけ、集めることから始まります。私達はその小さいサインを見逃しません。飼い主様も不安に思うことがあれば、遠慮なく教えて下さい！力になります！</div>
+                              <div class="staff-text">診察は病気のサインを見つけることが重要です。些細な不安でも遠慮なく教えて下さい！</div>
                             </div>
                           </div>
 
@@ -401,10 +401,6 @@
                   <div class="container">
                     <div class="footer">
                       <div class="col-md-6">
-                        <h2>丸山動物病院</h2>
-                        <p class="mb-0">東京都江東区石島 4-9</p>
-                        <p>TEL 03-5665-1212</p>
-
                         <!--診療時間-->
                         <table class="table mb-2 table-sm">
                           <thead class="thead-blue text-white">
@@ -470,37 +466,38 @@
                   </div>
                 </div>
 
+                <!--アクセスー-->
+                <div class="sub-title">
+                  <img src="img/dogcat2.png" alt="アイコン">
+                  <h2 class="medical-check-title">アクセス</h2>
+                </div>
 
-
-            　　 <!--地図-->
-                <!--<div class="col-md-7">
+            　<!--アクセス-->
+              <div class="access-content">
+                <div class="col-md-7">
+                  <div class="access">丸山動物病院</div>
+                  <p class="mb-0">東京都江東区石島 4-9</p>
+                  <p>TEL 03-5665-1212</p>
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.871056768986!2d139.80930385110352!3d35.68017683753925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018891dca4ab10d%3A0x46c21ff87751e1cc!2z44CSMTM1LTAwMTQg5p2x5Lqs6YO95rGf5p2x5Yy655-z5bO277yU4oiS77yZ!5e0!3m2!1sja!2sjp!4v1631874522263!5m2!1sja!2sjp" class="map" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>-->
+                </div>
 
+                <div class="map">
+                  <!--GoogleAPI 地図-->
+                  <div id="map"></div>
+                  <script src="http://maps.googleapis.com/maps/api/js?key={AIzaSyADW-v1vcRDsmQF0Q8FBCjYjy15Qr48UF8}&language=ja"></script>
+                  <script>
+                    var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
+                    var Options = {
+                    zoom: 15,      //地図の縮尺値
+                    center: MyLatLng,    //地図の中心座標
+                    mapTypeId: 'roadmap'   //地図の種類
+                    };
+                    var map = new google.maps.Map(document.getElementById('map'), Options);
+                  </script>
+                </div>
+              </div>
 
-
-                <div id="map"></div>
-
-                <script src="http://maps.googleapis.com/maps/api/js?key={AIzaSyADW-v1vcRDsmQF0Q8FBCjYjy15Qr48UF8}&language=ja"></script>
-
-                <script>
-                  var MyLatLng = new google.maps.LatLng(35.6811673, 139.7670516);
-                  var Options = {
-                  zoom: 15,      //地図の縮尺値
-                  center: MyLatLng,    //地図の中心座標
-                  mapTypeId: 'roadmap'   //地図の種類
-                  };
-                  var map = new google.maps.Map(document.getElementById('map'), Options);
-                </script>
-
-
-
-          
-
-
-
-
-                <!--天気API-->
+                <!--天気API
                 <div class="col-md-7">
                   <iframe src="https://api.openweathermap.org/data/2.5/weather?q=Tokyo,JP&appid=87586f50c2ea2c3f33cdf9fb879cffa5&lang=ja" class="weather" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
@@ -508,6 +505,7 @@
                     var forecast = JSON.parse(response.getContentText());//情報解析
                     console.log(forecast);
                 </script>
+                  -->
           </main>
 
 

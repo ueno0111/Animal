@@ -19,7 +19,7 @@ height: 42px;
 cursor: pointer;
 text-align: center;
 padding: 2rem;
-margin-top: 1rem;
+margin-top: 11px;
 }
 .hamburger span {
 display : block;
@@ -43,6 +43,7 @@ top: 30px;
 }
 .header-main-title{
 background-color: darkseagreen;
+margin-top: 0rem;
 }
 
 /* ナビ開いてる時のボタン */
@@ -110,17 +111,33 @@ width: 20%;
 padding-top: 15px;
 margin-top: 0px;
 }
-
+.contact{
+  margin-top: 12rem;
+}
+header{
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  margin-top: 0rem;
+}
+main{
+  z-index: 1;
+  margin-top: 8rem;
+}
 
 /*ヘッダータイトル*/
 .header-title-text{
-font-size: 30px;
+font-size: 35px;
 font-family: monospace;
 border-bottom: 7px solid palegoldenrod;
 text-align: center;
 margin-left: 0px;
-padding-bottom: 9px;
+padding-bottom: 20px;
+margin-top: -8rem;
 padding-left: 30px;
+}
+.header{
+  height: 9vh;
 }
 
 img{
@@ -132,7 +149,7 @@ margin-top:0rem;
 margin-top: -60px;
 font-weight: bold;
 text-align: left;
-margin-bottom: 0px;
+margin-bottom: 40px;
 margin-left: 88px;
 border-bottom: 3px solid seagreen;
 width: 50%;
@@ -230,7 +247,7 @@ padding-bottom: 155px;
 }
 .area2:nth-child(even) {
 background-color: cornsilk;
-padding-bottom: 65px;
+padding-bottom: 31px;
 height: 100%;
 }
 .area3:nth-child(odd) {
@@ -238,11 +255,11 @@ background-color: cornsilk;
 margin-top: 43px;
 height: 100%;
 width: 100%;
-padding-bottom: 1px;
+padding-bottom: 26px;
 }
 .area4:nth-child(even) {
 background-color: cornsilk;
-padding-bottom: 96px;
+padding-bottom: 60px;
 }
 .area5:nth-child(odd) {
 background-color: cornsilk;
@@ -253,14 +270,14 @@ padding-bottom: 70px;
 }
 .area6:nth-child(even) {
 background-color:cornsilk;
-padding-bottom: 96px;
+padding-bottom: 60px;
 }
 .area7:nth-child(odd) {
 background-color: cornsilk;
 margin-top:44px;
 height: 100%;
 width:100%;
-padding-bottom: 96px;
+padding-bottom: 60px;
 }
 
 /*診療案内　タイトル*/
@@ -268,9 +285,9 @@ padding-bottom: 96px;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 margin: auto;
 border-radius: 10px;
 }
@@ -278,9 +295,9 @@ border-radius: 10px;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -288,9 +305,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -298,9 +315,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -308,9 +325,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -318,9 +335,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -328,9 +345,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -338,7 +355,7 @@ margin: auto;
 /*診療案内　画像*/
 .area-img1{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 40px;
 padding-top: 0px;
 margin-top: 0px;
@@ -346,7 +363,7 @@ margin-top: 0px;
 
 .area-img2{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 40px;
 padding-top: 0px;
 margin-top: 0px;
@@ -355,36 +372,36 @@ margin-top: 0px;
 max-width: 100%;
 margin-bottom: 40px;
 padding-top: 0px;
-height: 25rem;
+height: 27rem;
 margin-top: 0px;
 }
 .area-img4{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-img5{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-img6{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-img7{
-max-width: 100%;
-height: 440px;
-margin-bottom: 43px;
-padding-top: 40px;
-margin-top: -40px;
+  max-width: 100%;
+  height: 30rem;
+  margin-bottom: 45px;
+  padding-top: 48px;
+  margin-top: -48px;
 }
 
 /*診療案内　　テキスト*/
@@ -436,7 +453,7 @@ line-height: 40px;
 background-color: cornsilk;
 margin-top: 12px;
 padding-bottom: 50px;
-margin-bottom: 0rem;
+margin-bottom: 5rem;
 width: 100%;
 }
 
@@ -472,45 +489,39 @@ text-align: center;
 
 /*当院の理念　サブタイトル*/
 .policy-contenttitle1{
-margin-left: 50px;
-margin-top: 50px;
+background-color: cadetblue;
+text-align: center;
 }
 .policy-contenttitle2{
-margin-left: 3rem;
-margin-top: 50px;
+  background-color: cadetblue;
+  text-align: center;
 }
 .policy-contenttitle3{
-margin-left: 50px;
-margin-top: 50px;
+  background-color: cadetblue;
+  text-align: center;
 }
 .policy-contenttitle1 span{
-font-size: 30px;
+font-size: 40px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 .policy-contenttitle2 span{
-font-size: 30px;
+font-size: 40px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 .policy-contenttitle3 span{
-font-size: 30px;
+font-size: 40px;
 color: white;
 margin-left: 20px;
 padding-left: 40px;
 font-style: italic;
-border-bottom: gray solid 2px;
-background-color: cadetblue;
 font-family: monospace;
 }
 
@@ -523,7 +534,7 @@ font-size: 16px;
 line-height: 40px;
 padding: 40px;
 font-family: serif;
-text-align: left;
+text-align: center;
 }
 .policy-text2{
 margin-top: 30px;
@@ -531,7 +542,7 @@ font-size: 16px;
 line-height: 40px;
 padding: 40px;
 font-family: serif;
-text-align: left;
+text-align: center;
 }
 .policy-text3{
 margin-top: 30px;
@@ -539,7 +550,7 @@ font-size: 16px;
 line-height: 40px;
 padding: 40px;
 font-family: serif;
-text-align: left;
+text-align: center;
 }
 
 
@@ -668,7 +679,7 @@ padding-bottom: 81px;
 }
 .area-machine6:nth-child(even) {
 background-color:cornsilk;
-padding-bottom: 77px;
+padding-bottom: 107px;
 }
 
 .area-machine7:nth-child(odd) {
@@ -690,9 +701,9 @@ padding-bottom: 81px;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -700,9 +711,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -710,9 +721,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -720,9 +731,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -730,9 +741,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -740,9 +751,9 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 40%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -750,9 +761,9 @@ margin: auto;
 background-color:cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
-width: 50%;
+width: 60%;
 border-radius: 10px;
 margin: auto;
 }
@@ -760,7 +771,7 @@ margin: auto;
 background-color: cadetblue;
 color: white;
 border-color: black;
-font-size: x-large;
+font-size: 25px;
 font-weight: bold;
 width: 60%;
 border-radius: 10px;
@@ -770,56 +781,56 @@ margin: auto;
 /*医療設備　　　画像*/
 .area-machine-img1{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img2{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img3{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img4{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img5{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img6{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img7{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
 }
 .area-machine-img8{
 max-width: 100%;
-height: 25rem;
+height: 27rem;
 margin-bottom: 43px;
 padding-top: 0px;
 margin-top: 0px;
@@ -876,6 +887,7 @@ max-width:100%;
 margin:0px auto;
 padding:80px 0px;
 margin-bottom: 0rem;
+margin-top: -7rem;
 }
 .wrapper .content .list {
 justify-content: center;
@@ -892,8 +904,8 @@ display: block;
 width: 100%;
 max-width: 300px;
 margin: 0px auto 20px auto;
-margin-top: -13rem;
-padding-top: 12rem;
+margin-top: 0rem;
+padding-top: 3rem;
 }
 .container, .container-lg, .container-md, .container-sm, .container-xl {
   max-width: 100%;
@@ -954,8 +966,14 @@ text-align: center;
 }
 .info-img{
 margin-left: -15px;
+margin-top: 0rem;
 }
 
+/*アクセス*/
+.access{
+  font-size: 22px;
+  font-family: monospace;
+}
 
 /*その他*/
 .text-blue {
@@ -966,6 +984,10 @@ color: black;
 .badge-primary,
 .bg-pink{
 background-color: seagreen;
+height: 100%;
+}
+.icon{
+  margin-top: -110px;
 }
 .header .jumbotron {
 background-size: cover;
@@ -974,16 +996,16 @@ position: relative;
 height:0;
 margin-bottom: 0;
 margin-bottom: 100px;
-margin-top: 0rem;
+margin-top: 3rem;
 }
 .header .jumbotron h1{
-font-size:19px;
-margin-top: -85px;
+font-size:30px;
+margin-top: -90px;
 font-family: serif;
 font-style: italic;
 }
 .text-muted{
-font-size:13px;
+font-size:15px;
 margin-top: 2rem;
 }
 .slide-bottom {
@@ -1005,6 +1027,9 @@ width: 100%;
 }
 footer{
   margin-top: 2rem;
+}
+.list-group-flush:last-child .list-group-item:last-child {
+margin-bottom: 5rem;
 }
 }
 
