@@ -1,22 +1,15 @@
 <?php
     session_start();
-      //初期化、空の値を代入することで、echoをした時に何も表示されない
-      // $error_name="";
-      // $error_body="";
-      // $error_succes="";
 
-      //入力チェック //
-      //下のPDOの引数に入れる、if文の外に出しても良い、場合によって使い分ける
-      //データベース名　grayokapi1_database
-      //ホスト名さくら　mysql57.grayokapi1.sakura.ne.jp
-      $dsn = 'mysql:dbname=takeshiueno_database1;host=mysql1.php.xdomain.ne.jp';//データベース接続
-       //ユーザー名　　grayokapi1
-      //パスワード　5050rock
-      $user = 'takeshiueno_0111';
-      $password = '5050Rock';
+      $error_name="";
+      $error_body="";
+      $error_succes="";
+
+      $dsn = 'mysql:dbname=grayokapi1_database;host=mysql57.grayokapi1.sakura.ne.jp';//データベース接続
+      $user = 'grayokapi1';
+      $password = '5050rock';
 
       //予約フォームからデータベースへ//
-      //値が空だった場合
       if($_GET["action"] == "reservation_action"){
         $error_flag=true;
         if($_POST["requests"] == ""){
@@ -55,7 +48,6 @@
         }
 
         //予約フォーム//
-        //$error_flagの中身はtrue,false。問い合わせフォームの必須の部分が入力されていれば、データベースと接続する//
         if($error_flag){
           try {
             $dbh = new PDO($dsn, $user, $password);
@@ -78,14 +70,10 @@
         }
       }
     }
-
 ?>
 
 <?php
-    //タイムゾーン設定
     date_default_timezone_set('Asia/Tokyo');
-
-    //表示させる年月を設定　↓これは現在の月
     $year = date('Y');
     $month = date('m');
 
@@ -103,16 +91,14 @@
     for($i = 0; $i < $first_week; $i++){
         $aryCalendar[$j][] = '';
     }
-
     //1日から月末日までループ
-    for ($i = 1; $i <= $end_month; $i++){
+    for($i = 1; $i <= $end_month; $i++){
         //日曜日まで進んだら改行
         if(isset($aryCalendar[$j]) && count($aryCalendar[$j]) === 7){
             $j++;
         }
         $aryCalendar[$j][] = $i; 
     }
-
     //月末曜日の穴埋め
     for($i = count($aryCalendar[$j]); $i < 7; $i++){
         $aryCalendar[$j][] = '';
@@ -120,31 +106,19 @@
     $aryWeek = ['日', '月', '火', '水', '木', '金', '土'];
 ?>
 
-
-
-
-
 <!DOCTYPE html>
-<html>
+<html　lang="ja">
     <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
       <meta charset="UTF-8">
-      <title>丸山動物病院　予約フォーム</title>
-      <meta name="description" content="サイトの説明文">
+      <title>予約フォーム</title>
+      <meta name="description" content="予約フォーム">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <link rel="canonical" href="maruyama.animal.clinic">
-      <link rel="icon" type="image/png" href="ファビコンのパス" />
-      <!-- OGP設定 -->
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="あなたのサイトURL" />
-      <meta property="og:image" content="SNSで表示させたい画像のパス" />
-      <meta property="og:title" content="ページタイトル" />
-      <meta property="og:description" content="サイトの説明文" />
+      <link rel="canonical" href=""><!--URLの正規化-->
 
-      <!-- スタイルシートはここから -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesom
       e.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link rel="stylesheet" href="../css/contact.css">
+      <link rel="stylesheet" href="contact.css">
       <link rel="stylesheet" href="queries.css">
       <link rel="stylesheet" href="reservation.css">
       <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text&display=swap" rel="stylesheet">
@@ -152,8 +126,8 @@
 
     
     <body>
-        <a name="link2"></a>
         <!--黒ボタン、ナビゲーション-->
+        <a name="link2"></a>
         <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
           <button class="navbar-toggler"  style="background-color: #111;" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
             <span class="navbar-toggler-icon"></span>
@@ -188,11 +162,8 @@
 
 
 
-
-          <!--メインの予約フォーム-->
           <main>
             <article class="container py-5 my-5">
-              <!-- お電話でのご予約・お問合せ -->
               <section class="mb-5">
                 <h3 class="tel-reception" style="padding-top:0rem;"><span class="border-bottom pb-2" style="line-height: 3.5rem; font-family:monospace;"><i class="mr-3 fas fa-phone"></i>お電話でのご予約・お問合せ</span></h3>
 
@@ -235,6 +206,7 @@
                           </div>
                         </div>
                       </fieldset>
+
 
                       <!--個人情報入力欄-->
                       <div class="form-group row">
@@ -315,16 +287,6 @@
                       </div>
 
 
-                      <!--カレンダーの日にちを選択したら黄色に変える-->
-                      <script>
-                        function click_date(select_date){
-                          // 背景を透明にする
-                          $('[id^="date_"]').css("background-color", "");
-                          // 選択のセルだけ赤色に染める
-                          $("#date_" + select_date).css("background-color", "yellow");
-                        }
-                      </script>
-
                       <div id="reservation_datetime"></div>
                       <input type="hidden" name="reservation_day" id="reservation_day">
                                       
@@ -403,7 +365,6 @@
                           <button type="submit" class="btn btn-primary">送信</button>
                         </div>
                       </div>
-
                   </div>
                 </form>
               </section>
@@ -460,10 +421,13 @@
                   <p class="text-right mb-4 small"> 休診日：火曜日、日曜午後・祝日</p>
 
                     <!--マップ-->
-                    <div class="col-md-6-2">
-                      <h2 class="map">マップ</h2>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12963.312118305756!2d139.7671248!3d35.6812362!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1600695521427!5m2!1sja!2sjp" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                    </div>
+                 <!--地図-->
+                 <div class="map">
+                    <div id="map"></div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.871056768986!2d139.80930385110352!3d35.68017683753925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018891dca4ab10d%3A0x46c21ff87751e1cc!2z44CSMTM1LTAwMTQg5p2x5Lqs6YO95rGf5p2x5Yy655-z5bO277yU4oiS77yZ!5e0!3m2!1sja!2sjp!4v1631874522263!5m2!1sja!2sjp" class="map" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <script src="http://maps.googleapis.com/maps/api/js?key={AIzaSyADW-v1vcRDsmQF0Q8FBCjYjy15Qr48UF8}&language=ja"></script>
+                  </div>
+                </div>
                 </div>
               </div>
             </div>
@@ -486,39 +450,9 @@
 
 
           <!--JavaScript、jQuery、Bootstrapの読み込み-->
-          <script src="reservation.js"></script>
+          <script src="index.js"></script>
           <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
           <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
           <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
-          <!--最上段のナビゲーション-->
-          <script>
-              $(window).on('scroll', function() {
-                h = $('header').outerHeight();
-                $('header nav').toggleClass('fixed', $(this).scrollTop() > h)
-              });
-
-              // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
-              (function() {
-                'use strict';
-
-                window.addEventListener('load', function() {
-                  // Bootstrapカスタム検証スタイルを適用してすべてのフォームを取得
-                  var forms = document.getElementsByClassName('needs-validation');
-
-                  // ループして帰順を防ぐ
-                  var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                      if (form.checkValidity() === false) {
-                        event.preventDefault();
-                        event.stopPropagation();
-                      }
-                      form.classList.add('was-validated');
-                    }, false);
-                  });
-                }, false);
-              })();
-          </script>
-
     </body>
 </html>
