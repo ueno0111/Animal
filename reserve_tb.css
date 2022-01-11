@@ -1,0 +1,223 @@
+/*タブレット*/
+@media  only screen and (min-width: 620px){
+* {
+    box-sizing: border-box;
+}
+body,
+a,
+.table {
+    color: #666;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 0.3rem;
+}
+p {
+    line-height: 1.6rem;
+    margin-top: 0;
+    margin-bottom:-5px;
+}
+button{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+/*ヘッダー*/
+.header-title{
+    font-size: 28px;
+    color: #fff;
+    text-shadow: #111 0 2px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.header-container{
+    background-color: darkseagreen;
+    text-align: center;
+    padding-top: 1rem;
+    margin-top: 13px;
+}
+
+/*ご予約はこちら*/
+.under-layer .jumbotron {
+    margin-bottom: 0;
+    background-color: seagreen;
+    margin-top: 1rem;
+}
+.jumbotron{
+    padding: 25px;
+}
+.web-reception {
+    background-color: seagreen;
+    color: white;
+    text-align: center;
+    border-radius: 45px;
+    font-size: 20px;
+}
+.step {
+    list-style-type: none;
+    display: table;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.step li {
+    display: table-cell;
+    position: relative;
+    background: #DBB96B;
+    padding: 1em 0.5em 1em 2em;
+    color: #fff;
+}
+
+.step li:last-child {
+    padding-right: 1em;
+}
+
+.step li:last-child:before,
+.step li:last-child:after {
+    display: none;
+}
+
+.step li:before,
+.step li:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin: auto;
+}
+
+.step li.is-current {
+    background-color: #8F6F29;
+    font-weight: bold;
+}
+
+.step li.is-current:after {
+    border-color: transparent transparent transparent #8F6F29;
+}
+
+
+
+/*カレンダー*/
+.calender-content{
+    width: 100%;
+    padding: 20px;
+}
+table.calendar{
+    width: 100%;
+}
+table.calendar th, table.calendar td{
+    padding: 8px;
+    background-color: #FFF;
+    text-align: center;
+    border: 1px solid #CCC;
+}
+
+/* 行の最初のtdは日曜日なため赤く */
+table.calendar th:first-of-type, table.calendar td:first-of-type{
+    background-color: #ffefef;
+    color: #FF0000;
+    font-weight: bold;
+}
+
+/* 行の最後のtdは土曜日なため青く */
+table.calendar th:last-of-type, table.calendar td:last-of-type{
+    background-color: #ededff;
+    color: #0000FF;
+    font-weight: bold;
+}
+
+/* 今日の日付 */
+table.calendar td.today{
+    background-color: #fbffa3;
+    font-weight: bold;
+}
+
+/*アクセスする病院名*/
+.access-title{
+    margin-top: 100px;
+}
+
+th.text-center{
+    background-color: seagreen;
+}
+th.pl-2{
+    background-color: seagreen;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    padding: 7px;
+}
+
+/*マップ*/
+.map{
+background-color: cornflowerblue;
+width: 100%;
+text-align: center;
+font-weight: bold;
+color: white;
+font-size: 25px;
+}
+
+/*フッター*/
+.footer{
+    background-color: seagreen;
+    height: 50px;
+}
+.footer-list a{
+    display: flex;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+    padding: 10px;
+}
+.footer-list ul{
+    display: flex;
+    list-style: none;
+}
+.footer-list li a{
+    padding: inherit;
+    font-size: 1px;
+}
+
+/*その他*/
+.col-form-label{
+    background-color: lightgray;
+    width: 40%;
+}
+.row{
+    margin: auto;
+    padding-top: 15px;
+}
+.col-md-6{
+    margin-bottom: 3rem;
+    margin-top: -14rem;
+    flex: 1 1 50%;
+    max-width: 100%;
+}
+.pl-2{
+    color:#111;
+}
+.col-sm-10 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 25px;
+    font-size: 20px;
+}
+.form-label{
+    font-size: 25px;
+    background-color: lightgray;
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+    font-weight: bold;
+    }
+}

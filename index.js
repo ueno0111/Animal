@@ -48,27 +48,29 @@ h = $('header').outerHeight();
 $('header nav').toggleClass('fixed', $(this).scrollTop() > h)
 });
 
-// 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
-(function() {
-'use strict';
 
-window.addEventListener('load', function() {
-    // Bootstrapカスタム検証スタイルを適用してすべてのフォームを取得
-    var forms = document.getElementsByClassName('needs-validation');
+// // 無効なフィールドがある場合にフォーム送信を無効にするスターターJavaScriptの例
+// (function() {
+// 'use strict';
 
-    // ループして帰順を防ぐ
-    var validation = Array.prototype.filter.call(forms, function(form) {
-    form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-    }, false);
-    });
-}, false);
-})();
+// window.addEventListener('load', function() {
+//     // Bootstrapカスタム検証スタイルを適用してすべてのフォームを取得
+//     var forms = document.getElementsByClassName('needs-validation');
 
+//     // ループして帰順を防ぐ
+//     var validation = Array.prototype.filter.call(forms, function(form) {
+//     form.addEventListener('submit', function(event) {
+//         if (form.checkValidity() === false) {
+//         event.preventDefault();
+//         event.stopPropagation();
+//         }
+//         form.classList.add('was-validated');
+//     }, false);
+//     });
+// }, false);
+// })();
+
+/*reservation.js*/
 /*カレンダーの日にちを選択したら黄色に変える*/
 function click_date(select_date){
     // 背景を透明にする

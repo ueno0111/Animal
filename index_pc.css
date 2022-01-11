@@ -1,0 +1,327 @@
+@media  only screen and (min-width: 1024px){
+* {
+  box-sizing: border-box;
+}
+
+body
+.table {
+  margin: 0;
+  color:#111;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color:#111;
+  letter-spacing: 0.3rem;
+}
+p {
+  line-height: 1.6rem;
+  }
+a{
+  color:#111;
+}
+li{
+  margin-left: 20px;
+}
+main{
+  margin: 30px;
+}
+
+/*ヘッダー*/
+.header-container{
+  position: absolute;
+  background-color: #fff;
+}
+.header-img{
+  height: 300px;
+  position: absolute;
+  padding: 30px;
+}
+.header-title{
+  width:50%;
+  text-align:center;
+  padding-top: 25px;
+}
+.header-title{
+  font-family: monospace;
+  width: 100%;
+  font-size: 5vw;
+  padding-top: 10px;
+  margin: auto;
+  margin-right: 60px;
+}
+
+/*ナビゲーション*/
+nav{
+  padding-top: 300px;
+  width: 100%;
+}
+.nav-menu{
+  display: flex;
+}
+.nav-menu ul{
+  list-style: none;
+  margin: 0 auto;
+  display: flex;
+}
+.nav-menu li{
+  margin: 25px;
+  font-size: 30px;
+  font-family: monospace;
+}
+
+/*理念と予約*/
+.philosophy {
+  padding-top: 0px;
+}
+.philosophy-title{
+  font-size: 35px;
+  font-family: serif;
+  text-align: center;
+  background-color: khaki;
+  height: 90px;
+  padding: 25px;
+  margin-top: 40px;
+}
+.text-muted{
+  font-size: 17px;
+  text-align: left;
+  margin: 30px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+  line-height: 35px;
+}
+.text-center{
+  margin-left: 10px;
+  line-height: 40px;
+}
+
+/*当院の理念　*/
+.policy {
+  background-color: cornsilk;
+  margin-top: 12px;
+  padding-bottom: 50px;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+.policy-image{
+  padding: 150px;
+  margin-top: -80px;
+}
+.policy-title{
+  margin-top: -75px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 30px;
+  margin-left: 88px;
+  border-bottom: 3px solid seagreen;
+  width: 65%;
+  text-align: center;
+  font-size: 45px;
+}
+.policy-content{
+  height: 100%;
+}
+.policy-subtitle{
+  background-color: cadetblue;
+  margin-top: -50px;
+  text-align: center;
+}
+.policy-subtitle span{
+  font-size: 45px;
+  color: white;
+  font-style: italic;
+  font-family: monospace;
+}
+.policy-text{
+  margin-top: 0px;
+  font-size: 30px;
+  line-height: 45px;
+  padding: 0px;
+  font-family: serif;
+  text-align: center;
+  padding: 1rem;
+  margin-bottom: 150px;
+}
+
+/*診療案内*/
+
+.area{
+  scroll-snap-align: start;
+  width: 100%;
+  flex: none;
+  text-align: center;
+  margin-top: 44px;
+  height: 100%;
+  padding-bottom: 155px;
+  background-color: cornsilk;
+}
+.area-subtitle{
+  background-color: mediumseagreen;
+  color: white;
+  border-color: black;
+  font-size: 35px;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+  border-radius: 60px;
+}
+.area-img{
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 45px;
+}    
+.area-text{ 
+  margin-top: 45px;
+  line-height: 50px;
+  font-family: serif;
+  font-size: 25px;
+}
+
+/*医療設備　*/
+.machine{
+  scroll-snap-align: start;
+  width: 100%;
+  flex: none;
+  text-align: center;
+  margin-top: 44px;
+  height: 100%;
+  padding-bottom: 155px;
+  background-color: cornsilk;
+}   
+.machine-subtitle{
+  background-color: mediumseagreen;
+  color: white;
+  border-color: black;
+  font-size: 35px;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+  border-radius: 60px;
+}
+.machine-img{
+  width: 50%;
+  margin-bottom: 60px;
+  margin-top: 45px;
+}  
+.machine-text{ 
+  margin-top: 45px;
+  line-height: 50px;
+  font-family: serif;
+  font-size: 25px;
+}
+
+/*スタッフ紹介　*/
+.staff-wrapper{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.staff-container{
+  width: 45%;
+  flex-wrap: wrap;
+  margin: 20px;
+  text-align:center;
+}
+.staff-image{
+  width:100%;
+}
+.staff-name{
+  margin-top: 20px;
+  background-color: cornsilk;
+  font-size: 25px;
+  font-family: monospace;
+}
+.staff-position{
+  margin-top: 20px;
+  font-size: 20px;
+}
+.staff-hobby{
+  font-size: 20px;
+}
+.staff-message{
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+
+/*お知らせ　　コンテンツ*/
+.info-wrapper{
+  font-size: 25px;
+  margin: 50px;
+  line-height: 55px;
+}
+.info-day{
+  margin-top: 25px;
+  font-size: 25px;
+  font-weight: bold;
+}
+.info-text{
+  font-size: 20px;
+}
+
+/*アクセス*/
+.access{
+  padding-left: 20px;
+  letter-spacing: 2px;
+}
+.map{
+  margin-bottom: 2rem;
+  margin-top:1rem;
+}
+
+/*フッター*/
+.footer-title{
+  border-top: seagreen solid 3px;
+  width: 100%;
+}
+.footer-text{
+  text-align: center;
+  background-color: darkseagreen;
+  color: black;
+  font-size: 30px;
+}
+
+/*その他*/
+.step-content{
+  overflow: auto;
+  scroll-snap-type: x;
+  display: flex;
+  margin-top: -20px;
+  margin-left: 5px;
+  margin-bottom: 0rem;
+}
+.col-md-6{
+  flex: 0 0 50%;
+  max-width: 100%;
+}
+.medical-check-title{
+  margin-top: -75px;
+  font-size: 45px;
+}
+
+.sub-title {
+    margin-top: 100px;
+}
+/*予約*/
+.bg-blue,
+.thead-blue,
+.badge-primary {
+  background-color: seagreen;
+}
+.bg-pink {
+  background-color: seagreen;
+}
+.table thead th{
+  vertical-align:baseline;
+}
+/* フェードイン*/
+.slide-bottom {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1.3s 0s ease-out;
+}
+}
