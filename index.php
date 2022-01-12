@@ -75,16 +75,16 @@
                     <div class="bg-blue p-3 rounded-lg mr-md-3 mb-3 mb-md-0">
                       <p class="text-white h3"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
                       <div class="d-flex align-items-center mb-2">
-                        <p class="bg-white rounded-pill px-1 py-1 mr-3 mb-0 text-center col-4 text-blue font-weight-bold">受付時間</p>
-                        <p class="text-white mr-5 h6">9:00～12:00 / 16:00～19:00</p>
+                        <p class="bg-white rounded-pill px-1 py-1 mr-3 mb-0 text-center col-5 text-blue font-weight-bold">受付時間</p>
+                        <p class="text-white m-1 h6">9:00～12:00<br>16:00～19:00</p>
                       </div>
-                      <p class="text-white mb-0">※ 火曜、日曜午後・祝祭日<br>※手術・往診12時〜16時</p>
+                      <p class="text-white mb-0">※ 火曜、日曜午後、祝祭日<br>※手術、往診12:00〜16:00</p>
                     </div>
                     
                     <!--WEB予約-->
                     <div class="mt-0 bg-pink p-4 rounded-lg col-md-5">
                       <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
-                      <p class="text-white">休診日および診療時間外に関係なく24時間受付</p>
+                      <p class="text-white">年中無休 24時間 受付中</p>
                       <a class="btn bg-white" href="reserve.php" role="button">予約する</a>
                     </div>
                   </div>
@@ -105,7 +105,7 @@
                       </div>
                       <div class="policy-content">
                         <h3 class="policy-subtitle"><span>動物への愛<span></h3>
-                        <p class="policy-text">「お節介なくらい愛情たっぷり、みんなうちの子！」<br>出会った子犬や子猫は家族、ずっと元気にいてほしい<br>動物と飼い主さんを一番に考え、最善の治療を尽くします</p>
+                        <p class="policy-text">「お節介なくらい愛情たっぷり、みんなうちの子！」<br>出会った子犬や子猫は家族、ずっと元気にいてほしい<br>動物と飼い主さんを一番に考え、最善を尽くします</p>
                       </div>
             
                       <div class="policy-container1">
@@ -114,7 +114,7 @@
                         </div>
                         <div class="policy-content1">
                           <h3 class="policy-subtitle"><span>信頼と安心<span></h3>
-                          <p class="policy-text">飼い主さんと深いコミニュケーションを図り<br>我が子の体調変化にすぐに気づくことができます。<br>病気は早期発見が基本です。早い段階で治療に入ることが大切です。</p>
+                          <p class="policy-text">動物も飼い主さんも不安を抱えていると思われます<br>飼い主さんと深いコミニュケーションを図り<br>退院する時は「笑顔」これが当院のモットーです</p>
                         </div>
                       </div>
 
@@ -124,7 +124,7 @@
                         </div>
                         <div class="policy-content2">
                           <h3 class="policy-subtitle"><span>知識と技術と精神<span></h3>
-                          <p class="policy-text">弊院は「知識、技術」の向上に努めております<br>応援にかけつけてくれるスタッフもおり体制は万全です。<br>経験豊富な医師とスタッフが責任を持ってご対応します。</p>
+                          <p class="policy-text">弊院は「知識、技術」の向上に日々努めると共に<br>最新の医療器具も導入しております<br>施術内容も細く飼い主さんへご説明いたします</p>
                         </div>
                       </div>
                 </div>
@@ -313,7 +313,7 @@
 
                           <tbody>
                             <tr>
-                              <th scope="row" class="pl-2">9:00~12:00</th>
+                              <th scope="row" class="p-2">9:00~12:00</th>
                               <td class="text-center">●</td>
                               <td class="text-center">－</td>
                               <td class="text-center">●</td>
@@ -323,7 +323,7 @@
                               <td class="text-center">▲ </td>
                             </tr>
                             <tr class="border-bottom">
-                              <th scope="row" class="pl-2">16:00~19:00</th>
+                              <th scope="row" class="p-2">16:00~19:00</th>
                               <td class="text-center">●</td>
                               <td class="text-center">－</td>
                               <td class="text-center">●</td>
@@ -334,25 +334,27 @@
                             </tr>
                           </tbody>
                         </table>
-                        <p class="text-right mb-0"> 休診日：火曜、日曜午後・祝日 ／ ▲ 日曜の午後は12：00まで</p>
+                        <p class="text-right mb-0"> 休診日：火曜、日曜午後・祝日<br> ▲ 日曜は12：00まで</p>
 
 
                         <!--電話予約-->
-                        <div class="d-md-flex flex-row">
-                          <div class="bg-blue p-3 rounded-lg col-md-6 mr-md-3 mb-3 mb-lg-0">
-                            <p class="text-white h3"><span><i class="fas fa-phone mr-3"></i></span>03-5665-1212</p>
-                            <div class="d-flex align-items-center">
-                              <p class="bg-white rounded-pill px-3 py-2 mr-2 text-center h6 text-blue font-weight-bold" style="line-height: 1rem;">受付時間</p>
-                              <p class="pl-2 text-white h6">9:00～12:00 / 16:00～19:00</p>
+                        <div class="container main-img">
+                          <div class="ml-2 d-md-flex flex-row justify-content-between">
+                            <div class="bg-blue p-3 mt-4 rounded-lg mr-md-3 mb-3 mb-md-0">
+                              <p class="text-white h3"><span><i class="fas fa-phone mr-3"></i></span>03-1234-5678</p>
+                              <div class="d-flex align-items-center mb-2">
+                                <p class="bg-white rounded-pill px-1 py-1 mr-3 mb-0 text-center col-5 text-blue font-weight-bold">受付時間</p>
+                                <p class="text-white m-1 h6">9:00～12:00<br>16:00～19:00</p>
+                              </div>
+                              <p class="text-white mb-0">※ 火曜、日曜午後、祝祭日<br>※手術、往診12:00〜16:00</p>
                             </div>
-                            <p class="text-white">※ 火曜、日曜午後・祝日は休診</p>
-                          </div>
-
-                          <!--WEB予約-->
-                          <div class="bg-pink p-3 rounded-lg col-md-6 mb-3 mb-lg-0">
-                            <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
-                            <p class="text-white">休診日および診療時間外に関係なく24時間受付</p>
-                            <a class="btn bg-white" href="reservation.php" role="button">予約する</a>
+                            
+                            <!--WEB予約-->
+                            <div class="mt-4 bg-pink p-4 rounded-lg col-md-5">
+                              <p class="text-white h4"><span><i class="fas fa-envelope mr-3"></i></span>Web予約</p>
+                              <p class="text-white">年中無休 24時間 受付中</p>
+                              <a class="btn bg-white" href="reserve.php" role="button">予約する</a>
+                            </div>
                           </div>
                         </div>
                       </div>
